@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
   def new
   end
   def create
-    
+    #test
     var=Student.create(first_name: params[:first_name] , last_name:  params[:last_name])
     redirect_to student_path(var)
   end 
